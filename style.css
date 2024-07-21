@@ -1,0 +1,162 @@
+body {
+    font-family: Georgia, 'Times New Roman', serif,;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(196, 100%, 93%);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(197, 74%, 17%);
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1rem;
+    color: hsl(59, 96%, 21%);
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li, ol li {
+    margin: 5px 0;
+    padding: 10px 0;
+    padding-left: 10px; 
+    border-left: none; 
+}
+
+.instructions-list {
+    list-style-type: decimal; 
+    padding-left: 20px; 
+}
+
+.instructions-list li {
+    margin: 10px 0;
+    padding-left: 0; 
+}
+
+
+.prep-time {
+    background: hsl(59, 100%, 90%);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.prep-time h3 {
+    margin-top: 0;
+}
+
+.prep-time ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.prep-time ul li {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .nutrition-table th, .nutrition-table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .nutrition-table th {
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .nutrition-table td {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .nutrition-table tr:not(:last-child) th, 
+  .nutrition-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ccc;
+  }
+  
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nutrition {
+        flex-direction: column;
+    }
+
+    .nutrition div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .nutrition div {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+}
